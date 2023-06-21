@@ -20,7 +20,6 @@ div{
     border-radius: 2rem;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
-    /* justify-content: center; */
     align-content: center;
 }
 .title{
@@ -30,7 +29,6 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
 }
 .left img{
     height: 1rem;
@@ -122,3 +120,67 @@ div{
 .bell{
     align-self: center;
 }
+
+/* SUMMARY */
+
+.summary{
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+}
+
+.img-body{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.img-body img{
+    height: 3rem;
+}
+
+.summary-body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.img-body strong{
+    font-size: 36px;
+}
+.cash{
+    color: green;
+}
+
+.summary-body p{
+    font-weight: bold;
+    /* font-size: large; */
+    color: grey;
+    text-align: center;
+}
+
+.summary-heading{
+    color: gray;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.summary-btn{
+    /* align-self: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.summary-btn button{
+    background-color: white;
+    font-weight: bold;
+    padding: .5rem 2rem;
+    color: gray;
+    border-radius: .5rem;
+}
+.exempt{
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+}
+
+/* main content */
