@@ -205,19 +205,16 @@ div {
 
 /* main content */
 
+/* left */
+
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: 2rem;
 }
 
-/* .my-pie{
-    /* width: 100%;
-    max-width: var(--pie-size);
-    max-height: var(--pie-size);
-} */
 .main-left {
     display: grid;
-    /* grid-template-rows: 1fr 2fr; */
 }
 
 .pie-charts {
@@ -226,4 +223,29 @@ div {
 }
 .bar-charts{
     padding: 0rem 1rem;
+}
+
+/* right */
+
+.message{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+.from img{
+    height: 2rem;
+}
+.from{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.mess-1>p{
+    padding-left: 1rem;
+}
+.mess-1{
+    border-radius: 1rem;
+}
+.main-right>h3{
+    text-align: center;
+    color: gray;
 }
