@@ -85,3 +85,58 @@ new Chart("pie-3", {
         }
     }
 });
+
+const xBar=[
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+]
+
+const yBar=[
+    1200,
+    1111,
+    2002,
+    1400,
+    2400,
+    1800,
+    1300,
+    1400,
+    2200,
+    3200,
+    1900,
+    2000,
+]
+
+new Chart("bar-graph", {
+    type: "line",
+    data: {
+      labels: xBar,
+      datasets: [{
+        fill: true,
+        lineTension: 0,
+        backgroundColor: "rgba(30,113,69,.4)",
+        borderColor: "rgb(30,113,69)",
+        data: yBar,
+        label: "Yearly trends"
+      }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: "Markets"
+        }
+    //   legend: {display: true},
+    // //   scales: {
+    // //     yAxes: [{ticks: {min: 6, max:16}}],
+    // //   }
+     }
+  });

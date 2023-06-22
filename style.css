@@ -141,6 +141,7 @@ div {
 .summary {
     display: grid;
     grid-template-rows: 2fr 3fr 1fr;
+    margin-bottom: 1rem;
 }
 
 .img-body {
@@ -216,10 +217,13 @@ div {
 } */
 .main-left {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 2fr; */
 }
 
 .pie-charts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.bar-charts{
+    padding: 0rem 1rem;
 }
