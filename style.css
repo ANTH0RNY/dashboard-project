@@ -1,20 +1,22 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --pie-size: 20rem;
 }
 
-div{
+div {
     border: 1px solid black;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 1fr 5fr;
     margin: 1rem;
     border-radius: 2rem;
 }
 
-.left{
+.left {
     /* height: 100vh; */
     position: sticky;
     border-radius: 2rem;
@@ -22,7 +24,8 @@ div{
     grid-template-rows: repeat(10, 1fr);
     align-content: center;
 }
-.title{
+
+.title {
     grid-row-start: 1;
     grid-row-end: 2;
     font-size: large;
@@ -30,32 +33,35 @@ div{
     align-items: center;
     justify-content: center;
 }
-.left img{
+
+.left img {
     height: 1rem;
 }
-.top{
+
+.top {
     grid-row-start: 2;
     grid-row-end: 6;
     display: grid;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
     align-items: center;
     padding: 1rem;
 }
 
-.top div{
+.top div {
     padding: 1rem;
 }
 
-.bottom{
+.bottom {
     grid-row-start: 7;
     grid-row-end: 10;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     align-content: center;
-     gap: 1rem;
-     padding: 1rem;
+    gap: 1rem;
+    padding: 1rem;
 }
-.bottom div{
+
+.bottom div {
     padding: 1rem;
 }
 
@@ -64,123 +70,156 @@ div{
  right side
   */
 
-.right{
+.right {
     border-radius: 0 2rem 2rem 0;
 }
-.nav img[src$=".svg"]{
+
+.nav img[src$=".svg"] {
     height: 1rem;
 }
-.nav img[src$=".png"]{
+
+.nav img[src$=".png"] {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
     border: solid black 1px;
 }
 
-.nav{
+.nav {
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-content: center;
     justify-content: center;
 }
-.search{
+
+.search {
     padding: 1rem;
 }
-.search input{
-    grid-column-start: 6; 
+
+.search input {
+    grid-column-start: 6;
     grid-column-end: 7;
     border-radius: 1rem;
     height: 1.5rem;
     padding-left: 1rem;
 }
-.not-search{
+
+.not-search {
     grid-column-start: 7;
     grid-column-end: 12;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.avatar{
+
+.avatar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
     margin-right: 1rem;
 }
-.brand{
+
+.brand {
     grid-column-start: 1;
     grid-column-end: 5;
     align-self: center;
     padding-left: 1rem;
 }
-.lang{
+
+.lang {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
 }
-.bell{
+
+.bell {
     align-self: center;
 }
 
 /* SUMMARY */
 
-.summary{
+.summary {
     display: grid;
     grid-template-rows: 2fr 3fr 1fr;
 }
 
-.img-body{
+.img-body {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding-left: 1rem;
 }
 
-.img-body img{
+.img-body img {
     height: 3rem;
 }
 
-.summary-body{
+.summary-body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.img-body strong{
+
+.img-body strong {
     font-size: 36px;
 }
-.cash{
+
+.cash {
     color: green;
 }
 
-.summary-body p{
+.summary-body p {
     font-weight: bold;
     /* font-size: large; */
     color: grey;
     text-align: center;
 }
 
-.summary-heading{
+.summary-heading {
     color: gray;
     font-size: 20px;
     padding-left: 1rem;
 }
 
-.summary-btn{
+.summary-btn {
     /* align-self: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.summary-btn button{
+
+.summary-btn button {
     background-color: white;
     font-weight: bold;
     padding: .5rem 2rem;
     color: gray;
     border-radius: .5rem;
 }
-.exempt{
+
+.exempt {
     font-size: 24px;
     color: green;
     font-weight: bold;
 }
 
 /* main content */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* .my-pie{
+    /* width: 100%;
+    max-width: var(--pie-size);
+    max-height: var(--pie-size);
+} */
+.main-left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pie-charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
