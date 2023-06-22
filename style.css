@@ -7,9 +7,6 @@ body {
     background-color: #eef0eb;
 }
 
-div {
-    /* border: 1px solid black; */
-}
 
 .container {
     display: grid;
@@ -30,7 +27,8 @@ div {
     align-content: center;
     background-color: rgba(244, 249, 233, 1);
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .title {
@@ -100,8 +98,9 @@ div {
     grid-template-columns: repeat(10, 1fr);
     align-content: center;
     justify-content: center;
-    border-radius: 0 2rem 0 0;
+    border-radius: 0 2rem 2rem 2rem;
     outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .search {
